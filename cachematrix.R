@@ -1,3 +1,7 @@
+## the first function makes a matrix. The second one produces the inverse of the matrix if 
+## m is different from null.
+
+##This function is basically a set of functions creating values from which to work with.
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -13,6 +17,8 @@ makeCacheMatrix <- function(x = matrix()) {
        getinverse = getinverse)
 }
 
+## cacheSolve essentially produces the inverse of the matrix produced earlier if 
+## m has not been defined.
 cacheSolve <- function(x, ...) {
   m <- x$getinverse()
   if(!is.null(m)) {
